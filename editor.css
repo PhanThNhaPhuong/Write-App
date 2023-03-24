@@ -1,0 +1,46 @@
+.title {
+    width: 95%;
+    height: 50px;
+  
+    margin: 10px;
+  
+    border-radius: 10px;
+  
+    font-size: 2rem;
+    font-weight: bold;
+  
+    word-break: break-word;
+  }
+  
+  .title:focus {
+    border: 2px solid #eee71f;
+  }
+
+  .submit {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+  button {
+    width: 200px;
+    color: rgba(255, 255, 255);
+    margin: 1rem 0;
+    background: #4267B2;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    box-shadow: rgb(0, 0, 0) 0px 1px 4px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  
+  button:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
