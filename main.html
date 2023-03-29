@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search" aria-label="show-search">
+      <input type="checkbox" id="show-menu" aria-label="show-menu">
+      <label for="show-menu" class="menu-icon"><em class="fas fa-bars"></em></label>
+      <div class="content">
+        <div class="logo"><a href="#">Document</a></div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#" class="desktop-link">Help</a></li>
+          <li><a href="#">Notes</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><em class="fas fa-search"></em></label>
+    </nav>
+  </div>
+  <div class="tab">
+    <div class="tab-wrapper">
+      <div class="tab-content is-active" data-tab="1"></div>
+      <div class="tab-content" data-tab="2"></div>
+      <div class="tab-content" data-tab="3"></div>
+    </div>
+  </div>
+  <div class="main-header">
+    <div class="main-header_new-note">
+      <a class="write" href="index.html">New</a>
+    </div>
+  </div>
+
+  <div id="doc-cards" class="row"></div>
+
+  <div class="alert-overlay hide" id="alert-overlay">
+    <div class="alert-wrapper">
+      <div class="content-wrapper">
+        <div class="content-wrapper">Title</div>
+        <div class="last-update-wrapper">Content</div>
+      </div>
+      <div class="button-box">
+        <button  class="delete-btn2" id="delete-btn2">Delete</button>
+        <button class="cancel-btn2" id="cancel-btn2">Cancel</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="/mainfunction.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="device-width" , initial-scale="1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="editor.css" />
+</head>
+
+<body>
+    <input id = "title" class="title" type="text" placeholder="Title" spellcheck="true" />
+    <textarea name="content" id="content" cols="30" rows="10">
+        </textarea>
+
+    <button type="button" id="submit">Submit</button>
+    <button type="button" onclick="location.href='main.html'">Cancel</button>
+    <script src="ckeditor/ckeditor.js"></script>
+    <script>CKEDITOR.replace("content");</script>
+    <script src="/function.js"></script>
+</body>
+
+
+</html>
