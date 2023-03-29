@@ -628,3 +628,14 @@ body {
 .column h2 {
     margin: 0 0 0.5rem 0;
 }
+
+/* .alert-overlay {
+    display: none;
+} */
+
+.hide {
+    display: none;
+}
+.show {
+    display: show;
+}

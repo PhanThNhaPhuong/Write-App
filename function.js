@@ -36,11 +36,13 @@ function submitDoc() {
         date: date
     }
     var key = d * 1;
-
+    
     listDocs[key] = doc;
+    var jsonData = JSON.stringify(doc);
 
     if (id) delete listDocs[id];
     sessionStorage.setItem("listDoc", JSON.stringify(listDocs));
+    //luu local
     history.back();
 }
 
